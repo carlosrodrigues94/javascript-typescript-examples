@@ -1,0 +1,16 @@
+{
+  "name": "javascript-typescript-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/carlosrodrigues94/javascript-typescript-examples.git",
+  "author": "carlosrodrigues94 <carlos.1994hrs@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "ts-node": "^10.0.0",
+    "ts-node-dev": "^1.1.8"
+  }
+}

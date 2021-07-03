@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "outDir": "./dist",
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules"]
+}
