@@ -19,4 +19,5 @@ export function reduceRightExample() {
   // the first currentValue is the value of last item on array
 
   console.log("ReduceRight => ", total);
+  // ReduceRight =>  97
 }

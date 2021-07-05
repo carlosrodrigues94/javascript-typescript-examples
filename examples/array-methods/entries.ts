@@ -18,4 +18,9 @@ export function entriesExample() {
   console.log("Entries => ", b);
   console.log("Entries => ", c);
   console.log("Entries => ", d);
+
+  // Entries =>  { value: [ 0, { name: 'jhon', age: 25 } ], done: false }
+  // Entries =>  { value: [ 1, { name: 'mary', age: 40 } ], done: false }
+  // Entries =>  { value: [ 2, { name: 'peter', age: 32 } ], done: false }
+  // Entries =>  { value: undefined, done: true }
 }

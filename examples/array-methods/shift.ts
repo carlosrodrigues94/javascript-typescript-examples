@@ -10,4 +10,5 @@ export function shiftExample() {
   // shift *modifies the original array
 
   console.log("Shift => ", result);
+  // Shift =>  { name: 'jhon', age: 25 }
 }
