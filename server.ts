@@ -1,3 +1,4 @@
+import { someExample } from "examples/array-methods/some";
 import express from "express";
 import {
   concatExample,
@@ -57,6 +58,7 @@ popExample();
 pushExample();
 toStringExample();
 toLocaleStringExample();
+someExample();
 
 app.listen(port, async () => {
   console.info(`[Javascript-Typescript-Examples] Running on ${port}`);

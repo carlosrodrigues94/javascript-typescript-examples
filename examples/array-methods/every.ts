@@ -11,11 +11,4 @@ export function everyExample() {
   // will test all values and return boolean
   console.log("usersEvery => ", usersEvery);
   // usersEvery =>  false
-
-  /*--------------- some ----------------*/
-  const usersSome = users.some((item) => item.age > 35);
-  // in this test, all items until find one that contains given validation
-  // will test all values and return boolean
-  console.log("usersSome => ", usersSome);
-  // usersEvery =>  true
 }
