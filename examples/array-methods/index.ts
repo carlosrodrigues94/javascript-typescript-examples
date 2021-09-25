@@ -24,3 +24,4 @@ export * from "./toLocaleString";
 export * from "./toString";
 export * from "./pop";
 export * from "./push";
+export * from "./some";

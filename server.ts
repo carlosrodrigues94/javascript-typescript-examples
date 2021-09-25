@@ -1,8 +1,5 @@
-import { someExample } from "examples/array-methods/some";
 import express from "express";
-import "./examples/class-examples/abstract";
-import "./examples/class-examples/private";
-import "./examples/class-examples/inheritance-with-super";
+
 import {
   AssignExample,
   EntriesExample,
@@ -11,6 +8,7 @@ import {
   GetOwnPropertyDescriptorsExample,
   KeysExample,
 } from "./examples/object-methods";
+import { showCreationalDesignPatterns } from "./examples/design-patterns/";
 import {
   concatExample,
   copyWhithinExample,
@@ -38,6 +36,7 @@ import {
   pushExample,
   toStringExample,
   toLocaleStringExample,
+  someExample,
 } from "./examples/array-methods";
 const app = express();
 const port = 3333;
@@ -74,28 +73,25 @@ function showArrayMethodsExamples() {
   someExample();
 }
 
-showArrayMethodsExamples();
+function showObjectMethods() {
+  KeysExample();
+  AssignExample();
+  EntriesExample();
+  FreezeExample();
+  GetOwnPropertyDescriptorExample();
+  GetOwnPropertyDescriptorsExample();
+}
 
-/** Object Examples */
+async function showClassExamples() {
+  require("./examples/class-examples/abstract");
+  require("./examples/class-examples/private");
+  require("./examples/class-examples/inheritance-with-super");
+}
 
-/** Internal Methods..
- *
- * apply
- * bind
- * call
- * caller
- * arguments
- * create
- * defineProperties
- * defineProperty
- */
-
-KeysExample();
-AssignExample();
-EntriesExample();
-FreezeExample();
-GetOwnPropertyDescriptorExample();
-GetOwnPropertyDescriptorsExample();
+// showObjectMethods();
+// showArrayMethodsExamples();
+// showClassExamples();
+showCreationalDesignPatterns();
 
 app.listen(port, async () => {
   console.info(`[Javascript-Typescript-Examples] Running on ${port}`);
