@@ -9,5 +9,5 @@ export function someExample() {
   // in this test, all items until find one that contains given validation
   // will test all values and return boolean
   console.log("usersSome => ", usersSome);
-  // usersEvery =>  true
+  // usersSome =>  true
 }
