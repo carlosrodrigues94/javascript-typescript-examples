@@ -19,7 +19,7 @@ class Prototype {
     clone.circularReference = {
       ...this.circularReference,
       prototype: Object.create(this),
-    };
+    } as ComponentWithBackReference;
 
     return clone;
   }
