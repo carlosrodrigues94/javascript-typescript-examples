@@ -3,6 +3,12 @@ export function EntriesExample() {
 
   const result = Object.entries(object);
 
+  const data = result.map(([key, value]) => ({ [key]: value }));
+
+  console.log("[OBJECT] - Entries example, data => ", data);
+
   console.log("[OBJECT] - EntriesExample => ", result);
-  // EntriesExample =>  [ [ 'id', 1 ], [ 'name', 'Carlos' ] ]
+
+  // [OBJECT] - Entries example, data =>  [ { id: 1 }, { name: 'Carlos' } ]
+  // [OBJECT] - Entries example =>  [ [ 'id', 1 ], [ 'name', 'Carlos' ] ]
 }
