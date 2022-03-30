@@ -8,7 +8,10 @@ import {
   GetOwnPropertyDescriptorsExample,
   KeysExample,
 } from "./examples/object-methods";
-import { showCreationalDesignPatterns } from "./examples/design-patterns/";
+import {
+  showCreationalDesignPatterns,
+  showStructuralDesignPatterns,
+} from "./examples/design-patterns/";
 import {
   concatExample,
   copyWhithinExample,
@@ -92,6 +95,7 @@ async function showClassExamples() {
 // showArrayMethodsExamples();
 // showClassExamples();
 showCreationalDesignPatterns();
+showStructuralDesignPatterns();
 
 app.listen(port, async () => {
   console.info(`[Javascript-Typescript-Examples] Running on ${port}`);
